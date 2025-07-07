@@ -277,7 +277,7 @@ userRouter.post("/checkout", authenticateUser, async (req, res) => {
           sellerID: item.sellerID,
           otpHash: hashedOtp,
           plainotp: otp,
-          otpExpiration: new Date().getTime() + 10 * 60 * 1000, 
+          otpExpiration: new Date().getTime() + 1 * 60 * 1000, 
         };
       })
     );
